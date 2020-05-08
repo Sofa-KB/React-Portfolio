@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode, faCodeBranch, faAddressBook } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
     return (
@@ -12,15 +14,15 @@ function Navbar() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-                <a className="nav-link" href="/">About Me <i className="fas fa-code"></i><span
+                <a className="nav-link" href="/">About Me <FontAwesomeIcon icon={faCode}/><span
                         className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="/portfolio">Portfolio <i className="fas fa-code-branch"></i><span
+                <a className="nav-link" href="/portfolio">Portfolio <FontAwesomeIcon icon={faCodeBranch}/><span
                         className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item active">
-                <a className="nav-link" href="/contact">Contact <i className="fas fa-address-book"></i><span
+                <a className="nav-link" href="/contact">Contact <FontAwesomeIcon icon={faAddressBook}/><span
                         className="sr-only">(current)</span></a>
             </li>
         </ul>
